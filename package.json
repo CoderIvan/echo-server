@@ -1,0 +1,36 @@
+{
+  "name": "echo-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Ivan",
+  "license": "ISC",
+  "scripts": {
+    "start": "node .",
+    "lint": "eslint .",
+    "ci": "npm run lint",
+    "test": "npm run lint",
+    "pkg": "pkg package.json --targets host --output executable"
+  },
+  "devDependencies": {
+    "eslint": "^7.18.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "pkg": "^4.4.9"
+  },
+  "dependencies": {
+    "@z-ivan/console": "^1.1.0",
+    "ajv": "^7.0.3",
+    "aliyun-sdk": "^1.12.3",
+    "bluebird": "^3.7.2",
+    "koa": "^2.13.1",
+    "koa-body": "^4.2.0",
+    "koa-router": "^10.0.0"
+  },
+  "pkg": {
+    "assets": [
+      "./node_modules/aliyun-sdk/**/*"
+    ]
+  },
+  "bin": "./index.js"
+}
