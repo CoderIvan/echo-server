@@ -13,7 +13,7 @@ function start(num) {
 	const circle = () => {
 		send().then(() => {
 			count += 1
-			if (num && num > 0 && count > num) {
+			if (num && num > 0 && count >= num) {
 				return
 			}
 			setTimeout(() => {
@@ -24,4 +24,4 @@ function start(num) {
 	circle()
 }
 
-start()
+start(1)

@@ -14,7 +14,7 @@ const rule02 = () => ({
 })
 
 const rule03 = () => ({
-	path: `/ivan%20test%20${String(Math.floor(Math.random() * 100)).padStart(2, '0')}`,
+	path: `/project_${String(Math.floor(Math.random() * 100)).padStart(2, '0')}`,
 	body: getRandomTerminalText(),
 })
 
