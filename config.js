@@ -2,6 +2,7 @@ module.exports = {
 	source: {
 		'http-server': {
 			port: Number(process.env.SOURCE_HTTP_SERVER_PORT || 80),
+			proxy: (process.env.SOURCE_HTTP_SERVER_PROXY || 'true') === 'true',
 		},
 		'udp-server': {
 			port: Number(process.env.SOURCE_UDP_SERVER_PORT || 90),
